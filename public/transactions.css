@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+/* body.dark-mode{
+    background-color: #121212;
+    color: #e0e0e0;
+  } */
+  .navbar {
+      position: fixed; /* Makes the navbar stay at the top */
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, box-shadow 0.3s;
+      z-index: 1000; /* Ensures navbar stays on top */
+  }
+  
+  /* Dark Mode Support */
+  body.dark-mode .navbar {
+      background: #1e1e1e;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Logo Styling */
+  .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+  }
+  
+  .logo img {
+      height: 70px;
+      margin-left: 80px;
+  }
+  
+  .logo-text {
+      font-size: 30px;
+      font-weight: bold;
+      color: #1e8449;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+      display: flex;
+      align-items: center;
+      margin-left: 50px;
+  }
+  
+  .nav-links a {
+      font-size: 18px;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #424242;
+      transition: color 0.3s ease;
+  }
+
+  body.dark-mode .nav-links a {
+    color: #e0e0e0;
+}
+
+.nav-links a:hover {
+    color: #1e8449;
+}
+
+.nav-links a.active-link {
+    color: #1e8449;
+    font-weight: bold;
+}
+
+/* Add padding to body to prevent content from hiding under the navbar */
+body {
+    padding-top: 80px;
+}
+.main{
+    /* background-color: black;
+    height: 739px;
+    width: 1513px; */
+    width: 100%;  /* Ensures it spans the full width */
+    max-width: 1550px; /* Adjust width as needed */
+    height: 100%;
+    /* overflow: hidden;  */
+    position: relative; /* Ensures child elements respect boundaries */
+    /* padding: 20px; */
+    /* background-color: yellow; */
+}
+.nav1{
+    background-color:#F3F3F3;
+    height: 739px;
+    width: 235px;
+    position: fixed;
+    margin-top: 30px;
+}
+
+body.dark-mode .nav1{
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+.nav1 .img1{
+    padding: 20px 10px;
+    margin-top: -10px;
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-top: 20px;
+    /* gap: 10px; */
+}
+.img1 img{
+  height: 150px;
+  width: 170px;
+}
+.nav1 .sub1{
+    padding: 50px 50px;
+    /* background-color: antiquewhite; */
+    height: 500px;
+}
+.nav1 .sub1 ul{
+    padding: 10px 0px;
+    /* background-color: beige; */
+    height: 350px;
+}
+.nav1 .sub1 ul li{
+    padding: 4px 10px;
+    height: 50px;
+    /* background-color: aqua;     */
+}
+.nav1 .sub1 ul li a{
+    font-size: 16px; 
+    font-weight: 300;
+    color: #9E9E9E;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: uppercase;
+    text-decoration: none; /* Ensures no underline by default */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+.nav1 .sub1 ul li a:hover {
+    color: rgb(2, 119, 2); /* Change text color on hover */
+    text-decoration:none; /* Underline on hover */
+}
+.wallet{
+    background-color: #4CAF50;
+    height: 30vh;
+    width: 170vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* left: 400px; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 235px;
+    /* width: 60%; */
+    height: 150px;
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    /* border-radius: 10px; */
+    margin-bottom: 20px;
+    /* width: 100%; */
+    /* float: center; */
+}
+
+body.dark-mode .wallet{
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+table {
+    width: 176vh;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 235px;
+}
+
+/* body.dark-mode table{
+    background-color: #121212;
+    color: #e0e0e0;
+  } */
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    text-align: center;
+}
